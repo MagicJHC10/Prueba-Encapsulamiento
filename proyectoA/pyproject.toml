@@ -1,0 +1,46 @@
+[project]
+name = "generic"
+version = "0.1.0"
+description = "Reusable Robot Framework keywords and resources for testing"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{ include = "generic", from = "Main" }]
+
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "robotframework (>=7.2.2,<8.0.0)",
+    "robotframework-seleniumlibrary (>=6.7.1,<7.0.0)",
+    "webdriver-manager (>=4.0.2,<5.0.0)",
+    "robotframework-dashboard (>=0.6.7,<0.7.0)",
+    "opencv-python (>=4.11.0.86,<5.0.0.0)",
+    "pillow (>=11.2.1,<12.0.0)",
+    "pynput (>=1.8.1,<2.0.0)",
+    "robotframework-screencaplibrary (>=1.6.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# Importante: Incluir los archivos .robot como package data
+[tool.poetry.package-data]
+"my_keyword_package" = ["*.robot"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
